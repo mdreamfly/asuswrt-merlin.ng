@@ -232,3 +232,4 @@ jobs:
             git add ${UPDATE_DIR}
             git commit -m "Updating Notes and manifest to version:${MAJOR_VER} ${MINOR_VER} [SKIP_CI]" -a
             git push origin
+            
