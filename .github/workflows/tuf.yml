@@ -39,8 +39,6 @@ jobs:
             tmate -S /tmp/tmate.sock wait tmate-ready
             tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'
             tmate -S /tmp/tmate.sock display -p '#{tmate_web}'
-        - name: Keep session alive
-          run: sleep infinity
         - name: Run debug commands - post
           run: |
             cd /
@@ -164,6 +162,8 @@ jobs:
           with:
             name: release-${{ matrix.cfg.model }}-${{ matrix.cfg.ui }}
             path: "/project/artifacts"
+        - name: Keep session alive
+          run: sleep infinity
     release-job:
       name: Publish
       needs: build-job
