@@ -2,7 +2,7 @@
 # Automatically generated file; DO NOT EDIT.
 # Linux/arm64 4.19.183 Kernel Configuration
 #
-CONFIG_USB_RTL8152=m
+
 #
 # Compiler: aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2019.11.1) 9.2.0
 #
@@ -1625,6 +1625,7 @@ CONFIG_USB_NET_DRIVERS=m
 CONFIG_USB_USBNET=m
 CONFIG_USB_NET_AX8817X=m
 CONFIG_USB_NET_AX88179_178A=m
+CONFIG_USB_RTL8152=m
 CONFIG_USB_NET_CDCETHER=m
 # CONFIG_USB_NET_CDC_EEM is not set
 CONFIG_USB_NET_CDC_NCM=m
